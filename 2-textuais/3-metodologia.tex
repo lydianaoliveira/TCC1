@@ -5,6 +5,147 @@ Texto texto texto texto texto texto texto texto texto texto texto texto texto te
 
 Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
 
+\section{Área de estudo e recorte temporal}\label{sec:area-estudo}
+
+	O presente estudo será conduzido considerando o domínio espacial do Atlântico Sul, delimitado entre as latitudes de 0° a 50°S e longitudes de 60°W a 10°E, abrangendo regiões tropicais , subtropicais e de médias latitudes do oceano.
+	Essa delimitação foi definida de modo a capturar diferentes regimes oceanográficos e atmosféricos que influenciam a variabilidade climática da América do Sul, incluindo áreas de formação e intensificação de anomalias de Temperatura da Superfície do Mar.
+
+	A escolha desse domínio permite contemplar regiões-chave para a dinâmica oceano-atmosfera, cocmo a zona de confluência Brasil-Malvinas, áreas de ressurgência e regiões associadas a padrões de variabilidade de larga escala.
+	Essas áreas são reconhecidas por sua influência na modulação de fluxos de calor, circulação atmosférica e transporte de umidade, fatores diretamente relacionados à ocorrência de extremos hidroclimáticos no continente.
+
+	No que tange ao domínio continental, a análise será restrita à região Sul do Brasil, compreendendo os estados do Paraná, Santa Catarina e Rio Grande do Sul. Essa região foi selecionada devido à sua alta variabilidade climática e frequência de eventos extremoms, incluindo episódios de precipitação intensa, secas e ondas de calor.
+	Além disso, trata-se de uma área fortemente influenciada por padrões oceânicos do Atlântico Sul, o que a torna particularmente relevante para estudos de teleconexões.
+
+	Quanto ao recorte temporal, este compreenderá o período de 1982 a 2025. A escolha do ano inicial está associada à disponibilidade de séries históricas consistentes de TSM derivadas de satélites, amplamente utilizadas na detecção de Ondas de Calor Marinhas. 
+	Esse intervalo temporal permite a análise de mais de quatro décadas de dados, possibilitando capturar tanto variabilidade climática interanual quanto tendências de longo prazo relacionadas às mudanças climáticas.
+
+	Do ponto de vista computacional, a extensão temporal do conjunto de dados é adequada para o treinamento de modelos de aprendizado de máquina, especialmente aqueles voltados à análise de séries temporais, como RNN e LSTM. 
+	A quantidade de observações disponíveis contribui para a robustez estatítica dos modelos, reduzindo riscos de overfitting e aumentando a capacidade de generalização.
+
+	Adicionalmente, a combinação entre um domínio espacial amplo e um período temporal extenso possibililta a construção de um conjunto de dados com alta variabilidade espaço-temporal, essencial para a identificação de padrões complexos e não lineares associados às teleconexões oceano-atmosfera.
+
+
+\section{Base de dados}\label{sec:base-dados}
+
+	A construção do conjunto de dados utilizado neste estudo baseia-se na integração de múltiplas fontes de dados climáticos e oceanográficos, com o objetivo de representar, de forma consistente, os processos físicos associados à interação oceano-atmosfera.
+	A utilização de diferentes bases permite capturar variáveis complementares e enriquecer a modelagem preditiva, especialmente em problemas envolvendo telecomunicações climáticas.
+
+	Os dados de Temperatura da Superrfície do Mar serão obtidos a partir do Copernicus Programme, que disponibiliza produtos derivados de observações por satélite e modelos numéricos, com cobertura global e alta resolução espaço-temporal. Esses dados são amplamente utilizados na literatura científica devido à sua consistência, qualidade e continuidade temporal, sendo adequados para detecção de Ondas de Calor Marinhas.
+	A TSM constitui a principal variável oceância deste estudo, sendo utilizada tanto na identificação de eventos extremos quanto na construção de variáveis explicativas para os modelos.
+
+	Para a caracterização das condições hidroclimáticas continentais, serão utilizados dados provenientes do Instituto Nacional de Meteorologia (INMET), que fornece medições observacionais de estações meteorológicas distribuídas ao longo do território brasileiro.
+	Esses dados incluem variáveis como precipitação acumulada e temperatura do ar, sendo fundamentais para a identificação de eventos extremos no domínio continental.
+	Considerando possíveis lacunas espaciais ou temporais nas séries observacionais, esses dados poderão ser complementados pelo conjunto Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS), que combina informações de satélite com dados de estações, proporcionando maior cobertura, especialmente em regiões com baixa densidade de observações.
+
+	Adicionalmente, serão incorporados dados de reanálise atmosférica provenientes do ERA5, desenvolvido pelo European Centre for Medium-Range Weather Forecasts (ECMWF). 
+	O ERA5 fornece estimativas consistentes de variáveis atmosféricas por meio de assimilação de dados observacioinais em modelos numéricos, permitindo reconstruir o estado da atmosfera com elevada resolução temporal e espacial.
+	Serão utilizadas variáveis como componentes zonal e meridional do vento, fluxo de calor na superfície, umidade relativa e pressão ao nível do mar.
+	Essas variáveis são essenciais para representar os mecanismos físicos associados às teleconexões, como transporte de calor e umidade, circulação atmosférica e padrões de pressão.
+
+	Do ponto de vista estrutural, os dados apresentam natureza distintas, incluindo séries temporais pontuais (estações meteorológicas), e dados em grade (gridded data) para variáveis oceânicas e de reanálise.
+	Essa heterogeneidade requer um processo de integração que considere diferençass de resolução espacial e temporal, bem como formatos de armazenamento, como arquivos NetCDF, frequentemente utilizados em dados climáticos multidimensionais.
+
+	Em termos de resolução, será adotada uma escala temporal comum entre os diferentes conjuntos de dados, definida com base na disponibilidade e na relevância para a detecção de eventos extremos.
+	A resolução espacial também será harmonizada, por meio de técnicas de reamostragem, de modo a permitir a combinação entre dados oceânicos e atmosféricos em uma mesma estrutura analítica.
+
+	A qualidade dos dados será avaliada por meio de verificações de consistência, incluindo identificação de valores ausentes, outliers e possíveis inconsistências físicas. 
+	Estratégias de tratamento serão aplicadas conforme necessário, garantindo a integridade do conjunto de dados utilizado nas etapas subsequentes.
+
+	Do ponto de vista computacional, os dados serão organizados em estruturas multidimensionais adequadas à análise de séries temporais e ao treinamento de modelos de aprendizado de máquina.
+	Em particular, serão utilizadas representações matriciais e tensoriais, permitindo a manipulação eficiente de grandes volumes de dados espaço-temporais.
+
+	Por fim, a integração dessas bases de dados possibilita a construção de um conjunto rico em variáveis explicativas, combinando informações oceânicas e atmosféricas.
+	Essa abordagem é fundamental para capturar a complexidade das teleconexões climáticas e para viabilizar a aplicação de modelos preditivos capazes de explorar relações não lineares e dependências de longa escala temporal.
+
+
+\section{Pré-processamento e integração dos dados}\label{sec:pre-processamento}
+
+	O pré-processamento dos dados constitui uma etapa fundamental deste estudo, uma vez que os conjuntos utilizados apresentam heterogeneidade em termos de resolução espacial, temporal, formato e qualidade.
+	Dessa forma, será adotada uma abordagem estruturada baseada no paradigma ETL (Extract, Transform, Load), visando garantir consistência, integridade e adequação dos dados para as etapas de análise e modelagem preditiva.
+
+	Na etapa de extração, os dados serão coletados e seus formatos originais, predominantemente em arquivos NetCDF para dados oceânicos e de reanálise, e em formatos tabulares (CSV) para dados de estações meteorológicas.
+	Para manipulação eficiente de dados multidimensionais, serão utilizadas bibliotecas computacionais adequadas ao contexto científico, como xarray, para dados em grade, e pandas, para séries temporais tabulares. 
+	Essas ferramentas permitem operações vetorizadas e manipulação eficiente de grandes volumes de dados.
+
+	Na etapa de transformação, serão realizadas diversas operações de tratamento e padronização.
+	Inicialmente, será conduzido o alinhamento temporal das séries, garantindo que todas as variáveis estejam representadas em uma mesma resolução temporal.
+	Dependendo da disponibilidade dos dados, poderá ser adotada resolução diária ou mensal, sendo esta decisão baseada no equilíbrio entre granularidade temporal e robustez estatística.
+
+	Em seguida, sereá realizada a padronização espacial, especialmente necessária para integração entre dados em grade (TSM e reanálise) e dados pontuais (estações meteorológicas).
+	Para isso, serão aplicadas técnicas de interpolação espacial ou agregação por regiões, permitindo associar variáveis oceânicas a pontos ou áreas continentais.
+	Esse processo pode envolver métodos como interpolação bilinear ou seleção de vizinhança espacial. 
+
+	O tratamento de dados ausentes será conduzido por meio de diferentes estratégias, dependendo da natureza e extensão das lacunas.
+	Para séries temporais com poucos valores ausentes, será utilizada interpolação linear ou métodos de preenchimento baseados em vizinhos próximos.
+	Em casos de lacunas mais extensas, poderão ser aplicados métodos baseados em médias climatológicas ou exclusão de períodos especíicos, de modo a evitar a introdução de viés nos modelos.
+
+	A detecção e tratamento de outliers será realizada com base em critérios estatísticos e físicos, considerando limites plausíveis para variáveis climáticas.
+	Valores inconsistentes serão analisados e, quando necessário, corrigidos ou removidos.
+
+	Posteriormente, será realizada a remoção da sazonalidade, etapa essencial para análise de anomalias climáticas. 
+	Para isso, serão calculadas climatologias baseadas na média de longo prazo para cada dia ou mês do ano, permitindo a obtenção de anomalias ao subtrair o ciclo sazonal da série original.
+	Esse procedimento é particularmente importante para isolar eventos extremos e padrões de variabilidade relevantes.
+
+	Após a obtenção de anomalias, será aplicada a normalização dos dados, utilizando-se de técnicas como padronização por z-score, de modo a garantir que variáveis apresentem escala comparável.
+	Essa etapa é fundamental para o desempenho de modelos de aprendizado de máquina, especialmente aqueles sensíveis à magnitude dos dados, como redes neurais.
+
+	Adicionalmente, será realizada a sincronização espaço-temporal entre variáveis oceânicas e continentais, incluindo a criação de defasagens temporais (lags), de modo a capturar possíveis atrasos na resposta atmosférica às anomalias oceânicas.
+	Esse procedimento é essencial para a modelagem de teleconexões, permitindo representar relações causais defasadas no tempo. 
+
+	Na etapa de carregamento, os dados processados seráo organizados em estruturas adequadas ao treinamento dos modelos. Especificamente, serão construídos arrays multidimensionais (tensores), nos quais cada amostra representa um instante temporal contendo múltiplas variáveis explicativas.
+	Para modelos baseados em séries temporais, como RNN e LSTM, os dados serão estruturados em janelas deslizantes, permitindo representar sequências temporais de entrada.
+
+	Do ponto de vista computacional, essa etapa será implementada como uma pipeline reprodutível, possibilitando rastrabilidade e reutilização dos dados processados.
+	Sempre que possível, serão adotadas práticas de versionamento de dados e scripts, a fim de garantir reprodutibilidade.
+
+	Por fim, o pré-processamento e integração dos dados resultam em um conjunto estruturado, consistente e adequado à modelagem computacional, permitindo a aplicação eficiente de técnicas de aprendizado de máquina e análise estatística.
+	Essa etapa é determinante para a qualidade dos resultados, uma vez que erros ou inconsistências nos dados podem comprometer significativamente o desempenho dos modelos e a validade das conclusões.
+
+
+\section{Detecção e caracterização de Ondas de Calor Marinhas}\label{sec:detecao-ondas-calor}
+
+	A detecção de Ondas de Calor Marinhas (Marine Heatwaves) será realizada com base na metodologia proposta por Hobday et al. (2016), amplamente consolidada na literatura como referência para identificação padronizada desses eventos.
+	
+	Do ponto de vista formal, uma MHW é definida como um evento no qual a Temperatura da Superfície do Mar (TSM) excede um limiar climatológico específico por um período contínuo de, no mínimo, cinco dias consecutivos.
+	Esse limiar é geralmente estabelecido como o percentil 90 da climatologia local, calculado a partir de uma série histórica suficientemente longa.
+
+	A implementação desse procedimento envolve múltiplas etapas.
+	Inicialmente, será construída a climatologia diária ou mensal da TSM para cada ponto da grade espacial, considerando o período de referência definido.
+	Em seguida, será calculado o limiar climatológico correspondente ao percentil 90 para cada dia do ano, o que permite capturar a variabilidade saszonal da temperatura oceânica.
+
+	A partir desses valores, será gerada uma série temporal de anomalias, obtida pela diferença entre a TSM obsevada e a climatologia.
+	Em seguida, será aplicada uma operação de detecção de excedências, na qual são identificados os instantes em que cada TSM ultrapassa o limiar estabelecido.
+	Esses pontos são então agrupados em sequência contínuas por meio de um processo de segmentação temporal, sendo consideradas MHWs apenas aquelas sequências com duração igual ou superior a cinco dias.
+
+	Do ponto de vista computacional, essa etapa pode ser interpretada como um problema de detecção de eventos em séries temporais com limiar dinâmico, no qual o limiar varia ao longo do tempo em função da sazonalidade.
+	A segmentação dos eventos pode ser implementada por meio de algoritmos de varredura sequencial, identificando blocos contíguos de valores acima do limiar.
+
+	Após a identificação dos eventos, será realizada a etapa de caracterização, na qual cada MHW será descrita por um conjunto de métricas quantitativas.
+	Entre as métricas a serem extraídass, destacam-se:
+
+	\begin{enumerate}
+		[label=(\roman*)]
+		\item duração do evento, definida como o número total de dias consecutivos acima do limiar;
+		\item intensidade máxima, correspondente ao maior valor de anomalia observado durante o evento;
+		\item intensidade média, calculada como a média das anomalias ao longo do evento;
+		\item intensidade acumulada, obtida pela soma das anomalias ao longo do período;
+		\item taxa de crescimento e decaimento, associadas às fases de intensificação e dissipação do evento.
+
+	\end{enumerate}
+
+	Além disso, considerando a natureza espacial dos dados de TSM, será realizada a análse da extensão espacial das MHWs, identificando regiões contínuas do oceanon afetadas simultaneamente.
+	Para isso, serão aplicadas técnincas de análise em grades bidimensionais, permitindo calcular a área total impactada e a persistência espacial dos eventos.
+
+	Essa abordagem possibilita representar cada evento de MHW não apenas como ocorrência temporal, mas como uma entidade espaço-temporal estruturada, contendo atributos físicos relevantes.
+	Essa representação é fundamental para a etapa de modelagem, pois permite transformar fenômenos oceanográficos complexos em variáveis quantitativas adequadas para algoritmos de aprendizado de máquina.
+
+	Adicionalmente, poderão ser realizadas agregações espaciais das métricas de MHWs, com o objetivo de construir índices regionais que sintetizem o comportamento oceânico em áreas específicas do Atlântico Sul.
+	Esses índices podem reduzir a dimensionalidade dos dados e facilitar a identificação de padrões de teleconexão.
+
+	Por fim, ressalta-se que a qualidade da detecção das MHWs depende diretamente da consistência das séries de TSM e da correta definição da climatologia de referência.
+	Desse modo, as etapas de pré-processamento descritas anteriormente são fundamentais para garantir a confiabilidade dos eventos identificados e, consequentemente, a robustez das análises subsequentes.
+
+
 \section{Exemplo de alíneas}\label{sec:exemplo-de-algoritmos-e-figuras}
 
     Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.

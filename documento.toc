@@ -6,55 +6,73 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{14}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Título do segundo capítulo}}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Citações bibliográficas}{15}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Inserindo figuras}{16}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Inserindo tabelas}{19}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Exemplo de subseção}{19}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Uso de siglas}{20}{subsection.2.3.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão da Literatura}}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ondas de Calor Marinhas (MHWs): avanços recentes}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.2}MHWs no Atlântico Sul e variabilidade climática}{18}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Teleconexões oceano-atmosfera e extremos hidroclimáticos}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Aplicações de aprendizado de máquina na modelagem climática}{19}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Detecção e representação computacional de Ondas de Calor Marinhas}{20}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Variabilidade no Atlântico Sul e geração de features climáticas}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Modelagem de teleconexões como problema de dependência complexa}{21}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Aprendizado de máquina aplicado à previsão climática}{21}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Integração entre dados oceânicos e modelos preditivos}{22}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Lacunas na literatura e posicionamento da pesquisa}{22}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Citações bibliográficas}{23}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Inserindo figuras}{24}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Inserindo tabelas}{27}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Exemplo de subseção}{27}{subsection.2.13.1}%
+\contentsline {subsection}{\numberline {2.13.2}Uso de siglas}{28}{subsection.2.13.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Exemplo de alíneas}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Usando Fórmulas Matemáticas}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Usando Código-fonte}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Usando Teoremas, Proposições, etc}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Usando Questões}{24}{section.3.5}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Área de estudo e recorte temporal}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Base de dados}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Pré-processamento e integração dos dados}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Detecção e caracterização de Ondas de Calor Marinhas}{34}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Exemplo de alíneas}{35}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Usando Fórmulas Matemáticas}{36}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Usando Código-fonte}{38}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Usando Teoremas, Proposições, etc}{38}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Usando Questões}{39}{section.3.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resultados do Experimento A}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Resultados do Experimento B}{26}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resultados do Experimento A}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Resultados do Experimento B}{41}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{28}{chapter.5}%
-\contentsline {chapter}{AP\^ENDICES}{29}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{43}{chapter.5}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{44}{section*.21}%
+\contentsline {chapter}{AP\^ENDICES}{45}{section*.21}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{29}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{45}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{30}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{46}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{31}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{47}{appendix.C}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{32}{appendix.D}%
-\contentsline {chapter}{ANEXOS}{34}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{48}{appendix.D}%
+\contentsline {chapter}{ANEXOS}{50}{appendix.D}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{34}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{50}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{35}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{51}{appendix.anexochapback.2}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\'INDICE}{54}{chapter*.22}%
