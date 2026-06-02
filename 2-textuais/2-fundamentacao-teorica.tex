@@ -199,6 +199,89 @@ além de oferecer insights valiosos para a previsão e mitigação dos impactos 
 	A ocorrência de extremos de temperatura está frequentemente relacionada a padrões de circulação atmosférica em grande escala e a anomalias oceânicas persistentes.
 	Dessa forma, compreender a relação entre condições oceânicas e extremos de temperatura constitui um aspecto fundamental para o desenvolvimento de sistemas preditivos baseados em aprendizado de máquina.
 
+\subsection{Extremos hidroclimáticos no Sul do Brasil}\label{sec:extremos-hidroclimaticos-sul-brasil}
+
+	A região Sul do Brasil apresenta elevada variabilidade hidroclimática devido à interação entre sistemas atmosféricos tropicais e extratropicais, além da influência de diferentes modos de variabilidade oceânica.
+	Como consequência, eventtos extremos de precipitação e temperatura ocorrem com frequência e produzem impactos significativos sobre setores econômicos e sociais.
+
+	Nas últimas décadas, a região tem registrado episódios recorrentes de enchentes, estiagens severas, ondas de calor e eventos de precipitação extrema.
+	Estudos recentes apontam que parte dessa variabilidade pode estar associada a anomalias oceânicas e mecanismos de teleconexão que influenciam a circulação atmosférica regional.
+
+	Dentre os possíveis fatores moduladores desses extremos, destacam-se ans anomalias de TSM no Atlântico Sul, capazes de modificar fluxos de calor, padrões de pressão atmosférica e transpoprte de umidade em direção ao continente.
+	Nesse contexto, compreender como eventos oceânicos extremos, especialmente as Ondas de Calor Marinhas, se relacionam com extremoms hidroclimáticos continentais representa um desafio científico relevante e constitui o principal foco desta pesquisa.
+
+\section{Não estacionariedade em séries climáticas}\label{sec:nao-estacionariedade}
+
+	A análise de séries temporais climáticas constitui uma etapa fundamental em estudos voltados à compreensão da variabilidade ambiental e à previsão de fenômenos hidroclimáticos.
+	No entanto, diferentemente de muitos sistemas físicos simplificados, variáveis climáticas frequentemente apresentam comportamento dinâmico e complexo, caracterizado por mudanças temporais em seus padrões estatísticos.
+	Essas mudanças desafiam pressupostos clássicos da análise estatística e torna necessária a adoção de abordagens capazes de representar adequadamente a evolução temporal do sistema climático.
+
+	Historicamente, diversos métodos estatísticos foram desenvolvidos sob a hipótese de estacionariedade, assumindo que as propriedades estatísticas das séries permanecem constantes ao longo do tempo.
+	Contudo, evidências observacionais e projeções climáticas indicam que muitas variáveis atmosféricas e oceânicas apresentam tendências, mudanças de regime e alterações em sua variabilidade, configurando um cenário de não estacionariedade (ref. Slater, 2021).
+
+	Segundo Slater (2021), a crescente ocorrência de eventos extremos e a intensificação de processos associados às mudanças climáticas têm levado ao questionamento da estacionariedade como hipótese válida para diversas aplicações hidrológicas e climáticas.
+	Nesse contexto, compreender a natureza não estacionária dos dados torna-se essencial para a construção de modelos estatisticos e computacionais mais robustos e capazes de representar adequadamente a dinâmica do clima.
+
+\subsection{Conceito de estacionariedade}\label{sec:conceito-estacionariedade}
+
+	Em séries temporais, a estacionariedade refere-se à condição em que as propriedades estatísticas do processo gerador dos dados permanecem invariantes ao longo do tempo.
+	De modo simplificado, uma série estacionária apresenta média, variância e estrutura de dependência temporal aproximadamente constantes.
+
+	A literatura estatística geralmente distingue duas formas principais de estacionariedade.
+	A estacionariedade forte exige que toda a distribuição probabilística da série permaneça inalterada ao longo do tempo.
+	Já a estacionariedade fraca, também denominada estacionariedade de segunda ordem, requer apenas que a média, a variância e a covariância dependam exclusivamente da defasagem temporal entre observações, e não do instante em que são calculadas.
+
+	Diversos métodos estatísticos tradicionais, incluindo técnicas de regressão, análise espectral e modelos autorregressivos, assumem algum grau de estacionariedade para garantir a validade de suas inferências.
+	Quando essa condição não é atendida, podem ocorrer estimativas enviesadas, interpretações equivocadas das relações entre variáveis e degradação do desempenho preditivo.
+
+	No contexto climático, a hipótese de estacionariedade frequentemente é utilizada como aproximação matemática para simplifficar a análise dos dados.
+	Entretanto, essa simplificação pode não representar adequadamente os processos físicos envolvidos, especialmente quando são considerados períodos longos de observação ou fenômenos associados às mudanças climáticas globais.
+
+
+\subsection{Não estacionariedade climática}\label{sec:nao-estacionariedade-climatica}
+	
+	A não estacionariedade ocorre quando as propriedade estatísticas de uma série temporal variam ao longo do tempo.
+	Em sistemas climáticos, esse comportamento pode manifestar-se por meio de alterações na média, variância, frequência de ocorrência de eventos extremos ou na própria estrutura de dependência temporal dos dados.
+
+	Diversos fatorers contribuem para a não estacionariedade climática. Entre eles destacam-se as oscilações naturais do sistema oceano-atmosfera, as mudanças de regime associados a padrões de circulação de grande escala, as tendências decorrentes do aquecimento global e as momdificações na frequência e intensidade dos eventos extremos.
+
+	Slater (2021) argumenta que a não estacionariedade representa atualmente um dos principais desafios para hidrologia e climatologia modernas.
+	Os autores destacam que mudanças graduais e persistentes oservadas em diversas variáveis ambientais comprometem a validade de métodos que assumem comportamento estatístico constante ao longo do tempo.
+
+	No caso específico da temperatura da superfície do mar, diversos estudos têm documentado tendências positivas associadas ao aquecimento dos oceanos e ao aumento da frequência de Ondas de Calor Marinhas.
+	De maneira semelhante, registros de precipitação e temperatura do ar têm apresentado alterações significativas em diferentes regiões do planeta, incluindo mudanças na intensidade e frequência de eventos extremos.
+
+	Além das tendências de longo prazo, a não estacionariedade também pode ser causada por mudanças abruptas de regime.
+	Essas transições podem ocorrer em resposta a reorganizações da circulação atmosférica ou oceânica, modificando padrões climáticos previamente estabelecidos.
+	Consequentemente, relações observadas em determinado período podem não permanecer válidas em intervalos temporais posteriores.
+
+	Esse aspecto é relevante para estudos de teleconexões, uma vez que a intensidade e a configuração das conexões entre oceano e atmosfera podem variar ao longo do tempo, produzindo relações não lineares e dependentets do contexto climático predominante.
+
+
+\subsection{Implicações para modelagem climática e aprendizado de máquina}\label{sec:implicacoes-modelagem-aprendizado}
+
+	A presença de não estacionariedade impõe desafios significativos ao desenvolvimentoto de modelos preditivos.
+	Em cenários não estacionários, os padrões aprendidos a partir de observações históricas podem sofrer alterações ao longo do tempo, reduzindo a capacidade de generalização dos modelos e aumentando as incertezas associadas às previsões.
+
+	Para minimizar esses efeitos, diferentes estratégias de pré-processamento são frequentemente utilizadas. Entre elas destacam-se a remoção da sazonalidade, o cálculo de anomalias climatológicas e a padronização das variáveis.
+	Essas técnicas permitem reduzir componentes determinísticos das séries temporais e enfatizar sinais associados à variabilidade climática e aos eventos extremos.
+
+	O cálculo de anomalis consiste em remover o comportamento médio esperado para determinado período do ano, destacando desvios em relação à climatologia de referência.
+	Essa abordagem é amplamente utilizada em climatologia por permitir comparações mais consistentes entre eventos ocorridos em diferentes épocas e condições sazonais.
+
+	Outra estratégia envolve a utilização de defasagens temporais (lags), que permitem representar respostas atrasadas entre diferentes componentes do sistema climático.
+	Em estudos de teleconexões oceano-atmosfera, essas defasagens são fundamentais para capturar o intervalo temporal necessário para que anomalias oceânicas influenciem processos atmosféricos e condições continentais.
+
+	Do ponto de vista computacional, modelos de aprendizado de máquina têm se mostrado particularmente promissores para lidar com sistemas climáticos não estacionários.
+	Algoritmos como Random Forest são capazes de capturar relações não lineares complexas entre variáveis, enquanto arquiteturas baseadas em Redes Neurais Recorrentes e Long Short-Term Memory apresentam capacidade de representar dependências temporais de curto e longo prazo.
+
+	As redes LSTM são especialmente relevantes em aplicações climáticas devido à sua estrutura de memória interna, que permite armazenar informações de estados anteriores e modelar relações temporais persistentes.
+	Essa característica torna esses modelos adequados para representar processos climáticos complexos, nos quais eventos observados em determinado instante podem influenciar o comportamento do sistema semanas, meses ou até anos depois.
+
+	Dessa forma, o reconhecimento explícito da não estacionariedade das séries climáticas não apenas fundamenta as etapas de pré-processamento adotadas nesta pesquisa, mas também justifica a escolha dos métodos de aprendizado de máquina empregados para investigar as teleconexões entre Ondas de Calor Marinhas no Atlântico Sul e extremos hidroclimáticos no Sul do Brasil.
+	
+
+
 \section{Citações bibliográficas}\label{sec:citacoes}
 
     Esta frase mostra como citar um livro sobre descargas atmosféricas \cite{rakov2003lightning}. Também podem ser citados \textit{sites} como \citeonline{elat2015densidade}. Você precisa escrever o código da referência no arquivo "referencia.bib" dentro da pasta "elementos-pos-textuais". Veja esse, onde estão alguns exemplos que já foram testados.        
