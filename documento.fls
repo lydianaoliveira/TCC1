@@ -1,6 +1,6 @@
-PWD C:\Meus Documentos\Modelo_de_Trabalho_Acadêmico_UFC__2_
+PWD c:\Meus Documentos\TCC1\TCC1
 INPUT C:\Users\lydia\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT documento.tex
+INPUT c:\Meus Documentos\TCC1\TCC1\documento.tex
 OUTPUT documento.log
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
@@ -536,9 +536,6 @@ INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\lydia\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
@@ -548,6 +545,9 @@ INPUT .\2-textuais\3-metodologia.tex
 INPUT .\2-textuais\3-metodologia.tex
 INPUT .\2-textuais\3-metodologia.tex
 INPUT 2-textuais\3-metodologia.tex
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\lydia\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd

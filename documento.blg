@@ -17,7 +17,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: 3-pos-textuais/referencias.bib
 Warning--entry type for "elat2015densidade" isn't style-file defined
---line 94 of file 3-pos-textuais/referencias.bib
+--line 187 of file 3-pos-textuais/referencias.bib
 Warning--I didn't find a database entry for "Hobday2016"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.

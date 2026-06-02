@@ -146,6 +146,59 @@ além de oferecer insights valiosos para a previsão e mitigação dos impactos 
 	Desse modo, a presente pesquisa se insere nesse contexto ao propor uma abordagem integrada que combina a identificação de MHWs no Atlântico Sul, a análise de teleconexões e eo uso de modelos de aprendizado de máquina (Random Forest, LSTM e RNN) para previsão de extremos hidroclimáticos. 
 	Essa integração representa uma avanço metodológico e contribui para o desenvolvimento de ferramentas mais robustas de monitoramento e previsão climática regional.
 
+
+
+\section{Eventos extremos hidroclimáticos}\label{sec:eventos-extremos}
+
+	Eventos hidroclimáticos constituem manifestações de baixa frequência e alta initensidade dos processos climáticos e hidrológicos, sendo responsáveis por impactos significativos sobre ecossistetmas, recursos hídricos, infraestrutura e atividades socioeconômicas.
+	Nas últimas décadas, a crescentet ocorrência desses eventos tem despertado interesse científico devido à sua relação com a variabilidade climática natural e com as mudanças climáticas antropogênicas.
+
+	Tradicionalmente, extremos hidroclimáticos são definidos como ocorrências raras em relação à distribuição estatística observada de uma variável climáticia ou hidrológica específica, como precipitação, temperatura, vazão ou umidade do solo.
+	No entanto, a literatutra recente destaca que a definição de extremo depende não apenas da magnitude do evento, mas também do contexto espacial, temporal e socioambiental em que ocorre (citação SLATER, 2021).
+
+	Segundo Slater (2021), a intensificação observada de diversos extremos climáticos ao redor do mundo tem evidenciado limitações de abordagens clássicas baseadas na hipótese de estacionaridade, tornando necessária a adoção de métodos capazes de representas mudanças temporais na frequência, intensidade e duração desses fenômenos.
+	Nesse contexto, a compreensão dos extremos hidroclimáticos exige a integração de conceitos estatísticos, físicos e computacionais, especialmente em estudos voltados para previsão e monitoramento climático.
+
+\subsection{Conceito de extremo climático}\label{sec:conceito-extremo}
+
+	Do ponto de vista estatístico, um evento extremo pode ser entendido como uma observação das caudas da distribuição de probabilidade de uma variável climática. Em resumo, trata-se de um valor significativamente superior ou inferior ao comportamento normalmente esperado para determinada região e período do ano.
+
+	A identificação desses eventos pode ser realizada por diferentes abordagens. 
+	Uma das mais utilizadas consiste na adoção de limiares percentílicos, como os percentis 90, 95 ou 99 para extremos positivos, e os percentis 10, 5 ou 1 para extremos negativos.
+	Outra estratégia amplamente empregada baseia-se no cálculo de anomalias padronizadas por meio do z-score, que mede a distância entree uma observação e a média climatológica em unidades de desvio padrão.
+
+	Além dessas abordagens, a Teoria dos Valores Extremos (Extreme Value Theory - EVT) fornece uma estrutura probabilística específica para modelar eventos raros, permitindo estimar probabilidades associadas a ocorrências de grande magnitude e períodos de retorno.
+	Métodos baseados em EVT têm sido amplamente utilizados em estudos hidrológicos e climáticos devido à sua capacidade de representar adequadamente o comportamento das caudas das distribuições.
+
+	A escolha do método de identificação depende das características dos dados, dos objetivos da pesquisa e da escala temporal analisada.
+	Em aplicações de aprendizado de máquina, a definição adequada dos extremos é particularmente importante, pois influencia a construção das variáveis-alvo utilizadas no treinamento dos modelos.
+
+\subsection{Extremos de precipitação}\label{sec:extremos-precipitacao}
+
+	Os extremos de precipitação correspondem a eventos caracterizados por valores excepcioinalmentet elevados ou reduzidos de chuva em relação à climatologia local.
+	Esses eventos estão entre os principais responsáveis por desastres naturais em diversas regiões do mundo, podendo ocasionar enchentes, inundações, movimentos de massa, perdas agrícolas e crises de abastecimento hídrico.
+
+	Eventos de precipitação extrema frequentemente resultam da interação entre processos atmosféricos de diferentes escalas, incluindo sistemas frontais, ciclones extratropicais, bloqueios atmosféricos, transporte de umidade e teleconexões climáticas.
+	A intensidade desses fenômenos pode ser amplificada por condições oceânicas favoráveis, especialmente quando anomalias de temperatura da superfície do mar modificam os fluxos de calor e umidade entrer oceano e atmosfera.
+
+	Por outro lado, extremos negativos de precipitação estão associados a períodos prolongados de déficit hídrico, caracterizando secas meteorológicas e hidrológicas.
+	Esses eventos podem produzir impactos duradouros sobre reservatórios, geração de energia, agricultura e abastecimento urbano.
+
+	De acordo com Slater (2021), estudos recentes têm evidenciado alterações significativas na frequência e intensidade de eventos extremos de precipitação em diversas regiões do planeta, reforçando a necessidade de abordagens que considerem a possível não estacionaridade dos registros climáticos.
+
+\subsection{Extremos de temperatura}\label{sec:extremos-temperatura}
+	
+	Os extremos de temperatura compreendem eventos em que os valores observados se afastam significativamente da climatologia de referência, podendo manifestar-se na forma de ondas de calor ou ondas de frio.
+
+	Ondas de calor são caracterizadas por períodos persistentes de temperaturas acima do padrão esperado para determinada região e estação do ano. Esses eventos estão associados a impactos sobre a saúde humana, produtividade agrícola, demanda energética e funcionamento de ecossistemas.
+	Nos últimos anos, diversos estudos têm documentado aumento na frequência, intensidade e duração das ondas de calor em escala global.
+
+	Em contraste, ondas de frio correspondem a episódios prolongados de temperaturas excepcionalmente babixas, capazes de causar prejuízos à agricultura, mortalidade de animais e riscos à saúde pública.
+	Embora o aquecimento global tenha contribuído para a redução da frequência de alguns tipos de extremos frios, esses eventos continuam ocorrendo e podem apresentar severidade regional.
+
+	A ocorrência de extremos de temperatura está frequentemente relacionada a padrões de circulação atmosférica em grande escala e a anomalias oceânicas persistentes.
+	Dessa forma, compreender a relação entre condições oceânicas e extremos de temperatura constitui um aspecto fundamental para o desenvolvimento de sistemas preditivos baseados em aprendizado de máquina.
+
 \section{Citações bibliográficas}\label{sec:citacoes}
 
     Esta frase mostra como citar um livro sobre descargas atmosféricas \cite{rakov2003lightning}. Também podem ser citados \textit{sites} como \citeonline{elat2015densidade}. Você precisa escrever o código da referência no arquivo "referencia.bib" dentro da pasta "elementos-pos-textuais". Veja esse, onde estão alguns exemplos que já foram testados.        
