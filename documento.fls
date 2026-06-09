@@ -563,10 +563,6 @@ INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\lydia\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7v.vf
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
@@ -576,6 +572,10 @@ INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7v.vf
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\lydia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex

@@ -71,7 +71,7 @@ Texto texto texto texto texto texto texto texto texto texto texto texto texto te
 	Inicialmente, será conduzido o alinhamento temporal das séries, garantindo que todas as variáveis estejam representadas em uma mesma resolução temporal.
 	Dependendo da disponibilidade dos dados, poderá ser adotada resolução diária ou mensal, sendo esta decisão baseada no equilíbrio entre granularidade temporal e robustez estatística.
 
-	Em seguida, sereá realizada a padronização espacial, especialmente necessária para integração entre dados em grade (TSM e reanálise) e dados pontuais (estações meteorológicas).
+	Em seguida, será realizada a padronização espacial, especialmente necessária para integração entre dados em grade (TSM e reanálise) e dados pontuais (estações meteorológicas).
 	Para isso, serão aplicadas técnicas de interpolação espacial ou agregação por regiões, permitindo associar variáveis oceânicas a pontos ou áreas continentais.
 	Esse processo pode envolver métodos como interpolação bilinear ou seleção de vizinhança espacial. 
 
@@ -144,6 +144,71 @@ Texto texto texto texto texto texto texto texto texto texto texto texto texto te
 
 	Por fim, ressalta-se que a qualidade da detecção das MHWs depende diretamente da consistência das séries de TSM e da correta definição da climatologia de referência.
 	Desse modo, as etapas de pré-processamento descritas anteriormente são fundamentais para garantir a confiabilidade dos eventos identificados e, consequentemente, a robustez das análises subsequentes.
+
+\section{Identificação dos extremos hidroclimáticos}\label{sec:identificacao-extremos-hidroclimaticos}
+
+	Após a etapa de pré-processamento e integração dos dados, serão identificados os eventos hidroclimáticos extremos associados às variáveis de precipitação e temperatura do ar observadas na região Sul do Brasil.
+	A caracterização desses eventos constitui uma etapa fundamental da pesquisa, uma vez que os extremos identificados serão utilizados como variável-alvo (target) nos modelos de aprendizado de máquina desenvolvidos posteriormente.
+
+	A identificação dos extremos será realizada a partir das séries temporais de precipitação e temperatura provenientes das bases selecionadas, considerando a climatologia local de cada estação.
+	Primeiramente, serão calculadas as anomalias climáticas em relação ao período de referência adotado, de modo a remover a influência da sazonalidade e permitir a comparação entre diferentes períodos do ano.
+
+	A definição dos eventos extremos será baseada em critérios estatísticos amplamente utilizados na literatura climatológica, incluindo medidas padronizadas de desvio em relação ao comportamento médio das variáveis observadas.
+	Tal abordagem permite identificar eventos raros e potencialmente impactantes, reduzindo a influência da variabilidade climática de baixa mamgnitude.
+
+\subsection{Identificação dos extremos de precipitação}\label{sec:identificacao-extremos-precipitacao}
+
+	Os extremos de precipitação serão identificados a partir das anomalias observadas em cada série temporal.
+	Para cada estação meteorológica, será calculada a climatologia de referência e, posteriormente, os desvios em relação ao comportamento esperado.
+
+	Serão considerados eventos extremos positivos os episódios caracterizados por acumulados de precipitação sinificativamente superiores  aos valores climatológicos da região.
+	Esses eventos estão frequentemente associados a enchentes, inundações e desastrers hidrometeorológicos.
+	De modo complementar, poderão ser identificados extremos negativos de precipitação, correspondentes a períodos de déficit hídrico e condições de seca.
+
+	A classificação dos eventos permitirá a construção de séries temporais que representarão a ocorrência e intensidade dos extrermos, servindo como variável de interesse para as análises de teleconexão e modelagem preditiva.
+
+\subsection{Identificação dos extremos de temperatura}\label{sec:identificacao-extremos-temperatura}
+
+	Para a temperatura do ar, serão inicialmente calculadas as anomalias em relação à climatologia local, permitindo identificar desvios positivos e negativos em relação ao comportamento médio esperado.
+
+	Os extremos positivos corresponderão a eventos de temperatura anormalmente elevada, associados a ondas de calor e condições térmicas adversas.
+	Já os extremos negativos serão caracterizados por episódios de temperatura anormalmente baixa, relacionados a episódios de frio intenso.
+
+	A utilização de anomalias padronizadas possibilita a comparação entre diferentes localidades e períodos do ano, reduzindo a influência de diferenças climáticas regionais e permitindo a identificação consistente de eventos extremos em toda a área de estudo.
+
+\subsection{Critério estatístico de classificação dos extremos}
+
+	A classificação dos eventos extremos será realizada por meio do cálculo do z-score, que expressa a distância entre uma observação e a média climatológica em unidades de desvio padrão.
+	O z-score é calculado pela fórmula:
+	\begin{equation}
+		z_t = \frac{X_t - \mu_t}{\sigma_t}
+	\end{equation}
+	Onde $X_t$ representa o valor observado da variável climática no instante $t$, $\mu_t$ é a média climatológica da série e $\sigma_t$ é o desvio padrão da série de referência.
+
+	Considerando a necessidade de obter quantidades suficientes de amostras para o treinamento dos modelos de aprendizado de máquina e, simultaneamente, preservar o caráter extremo dos eventos analisados, serão classificados como extremos os registros que apresentarem valores de z-score superiores ou iguais a dois desvios padrão (z-score $\geq$ 2).
+	Esse limiar corresponde a eventos estatisticamente raros em relação ao comportamento climatológico da variável, sendo amplamente utiliziado em estudos de detecção de anomalias e eventos extremos.
+
+	Adicionalmente, será realizada análise exploratória baseada em percentis climatológicos, especialmente os percentis 95 e 99 para extremoms positivos e os percentis 5 e 1 para extremos negativos, permitindo comparar diferentes critérios de identificação.
+
+	A utilização conjunta de anomalias padronizadas e percentis climatológicos busca aumentar a robustez da identificação dos eventos extremos, reduzindo possíveis vieses decorrentes da distribuição estatística das variáveis analisadas e proporcionando uma representação mais consistente dos extremos hidroclimáticos utilizados na etapa de modelagem preditiva.
+
+
+\subsection{Análise de tendências por meio do teste de Mann-Kendall}\label{sec:mann-kendall}
+
+	Além da identificação dos eventos extremos, será realizada uma análise de tendência das séries temporais de precipitação e temperatura por meio do teste não paramétrico de Mann-Kendall.
+	Esse teste é amplamente utilizado em estudos climatológicos e hidrológicos por não exigir que os dados sigam distribuição normal e por apresentar robustez diante da ocorrência de valores extremos.
+
+	O teste de Mann-Kendall tem como objetivo verificar a existência de tendências monotônicas estatisticamente significativas ao longo do tempo, permitindo identificar possíveis aumentos ou reduções persistentes nas variáveis analisadas.
+	A hipótese nula considera que a série não apresenta tendência temporal, enquanto a hipótese alternativa assume a existência de tendência crescente ou decrescente.
+
+	A estatística do teste é calculada a partir das diferençar entre todos os pares de observações da série temporal, gerando o coeficiente (S), cuja significância é posteriormente avaliada por meio da estatística padronizada ($Z_{MK}$).
+	Valores positivos de ($Z_{MK}$) indicam tendência crescente, enquanto valores negativos indicam tendência decrescente.
+
+	Para quantificar a magnitude das tendênciass identificadas, será empregado o estimador de inclinação de Sen (Sen's Slope), frequentemente utilizado em conjunto com o teste de Mann-Kendall.
+	Esse estimador fornece uma medida robusta da taxa de variação temporal das variáveis climáticas, permitindo avaliar a intensidade das mudanças observadas.
+
+	Aplicação conjunta do teste de Mann-Kendall e do estimador Sen permitirá investigar possíveis sinais de não estacionariedade nas séries de precipitação e temperatura da região Sul do Brasil.
+	Os resultados obtidos contribuirão para a interpretação dos padrões identificados nas análises de teleconexão e para a compreensão do contexto climático em que os modelos de ML serão desenvolvidos.
 
 
 \section{Exemplo de alíneas}\label{sec:exemplo-de-algoritmos-e-figuras}

@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex documento"] 1780418687.00587 "documento.aux" "documento.bbl" "documento" 1780418700.78974 0
+["bibtex documento"] 1781013256.02695 "documento.aux" "documento.bbl" "documento" 1781013271.68691 0
   "./3-pos-textuais/referencias.bib" 1780401547 6389 a1247f4050e7693c84d1af27bbccb68f ""
   "C:/Users/lydia/AppData/Local/Programs/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/lydia/AppData/Local/Programs/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "documento.aux" 1780418696 43259 9b327456887cabdd49f81f5e1732590a "pdflatex"
+  "documento.aux" 1781013268 47539 6ecd6dd0a2885a205c32ccb72f6f6876 "pdflatex"
   (generated)
   "documento.bbl"
   "documento.blg"
   (rewritten before read)
-["makeindex documento.idx"] 1780418686.11607 "documento.idx" "documento.ind" "documento" 1780418700.78868 0
-  "documento.idx" 1780418696 195 11488d96f5ee7d813acdc5bc49450c6a "pdflatex"
+["makeindex documento.idx"] 1781013231.03283 "documento.idx" "documento.ind" "documento" 1781013271.68496 0
+  "documento.idx" 1781013268 195 5a0182f261b99196a556e5e20962f1e3 "pdflatex"
   (generated)
   "documento.ilg"
   "documento.ind"
   (rewritten before read)
-["pdflatex"] 1780418687.91304 "c:/Meus Documentos/TCC1/TCC1/documento.tex" "documento.pdf" "documento" 1780418700.79133 0
+["pdflatex"] 1781013257.66436 "c:/Meus Documentos/TCC1/TCC1/documento.tex" "documento.pdf" "documento" 1781013271.68986 0
   "1-pre-textuais/abstract.tex" 1780401547 1693 7fe3740d00eb1e074a18123adf7c7a5d ""
   "1-pre-textuais/agradecimentos.tex" 1780401547 2286 82ea50666c4dce12e8d1a2d7913ba0de ""
   "1-pre-textuais/dedicatoria.tex" 1780401547 263 fac4ba2ad65ac88df6a60156cf6be291 ""
@@ -25,7 +25,7 @@
   "1-pre-textuais/resumo.tex" 1780401547 1676 429245044ea4278a7e3ebc873bf8fa0f ""
   "2-textuais/1-introducao.tex" 1780401547 2831 3df783d8b5eda5d011225af05ab0a672 ""
   "2-textuais/2-fundamentacao-teorica.tex" 1780418615 47432 ea3b293ef3931a037b7f75078c2697bc ""
-  "2-textuais/3-metodologia.tex" 1780401547 27657 ed647716207183ea204c719db596bd01 ""
+  "2-textuais/3-metodologia.tex" 1781013203 34824 4be0d2d267640ad2954b0242e50707b8 ""
   "2-textuais/4-resultados.tex" 1780401547 5123 8ed3ee6b28d3078594f9cfb9ae166f4d ""
   "2-textuais/5-conclusao.tex" 1780401547 401 8343fa70a72435ca57076aa09e1c1292 ""
   "3-pos-textuais/anexos/Sikasil.pdf" 1780401547 68098 fe52b7c1635848229b737e39714d65d4 ""
@@ -243,14 +243,14 @@
   "C:/Users/lydia/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/lydia/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "c:/Meus Documentos/TCC1/TCC1/documento.tex" 1780401547 11837 4f1becb83a60bb58e22d2e0689ab2190 ""
-  "documento.aux" 1780418696 43259 9b327456887cabdd49f81f5e1732590a "pdflatex"
-  "documento.bbl" 1780418687 4980 505e67de448261391aa0c62037ccfa53 "bibtex documento"
+  "documento.aux" 1781013268 47539 6ecd6dd0a2885a205c32ccb72f6f6876 "pdflatex"
+  "documento.bbl" 1781013257 4980 505e67de448261391aa0c62037ccfa53 "bibtex documento"
   "documento.gls" 0 -1 0 ""
-  "documento.ind" 1780418686 274 f27e6372852727dde1ae438e52b08bab "makeindex documento.idx"
-  "documento.lof" 1780418696 585 50b142541c9798506c3ab440f57351e7 "pdflatex"
-  "documento.lot" 1780418696 291 ef31ee64fe2b14a1d20950e742b55f51 "pdflatex"
+  "documento.ind" 1781013231 274 3e7ec9e7e23a681cf95f6ca69f6d4900 "makeindex documento.idx"
+  "documento.lof" 1781013268 585 55aacaadf851adbb539cc2c3217382bc "pdflatex"
+  "documento.lot" 1781013268 291 b9e02498fe073d18c490bdebff2067e2 "pdflatex"
   "documento.tex" 1780401547 11837 4f1becb83a60bb58e22d2e0689ab2190 ""
-  "documento.toc" 1780418696 7526 650cc6414c4421fe1d1f23edf017bfbf "pdflatex"
+  "documento.toc" 1781013268 8118 6aca1bfbec2aa5e2ae4da4c40938e79a "pdflatex"
   "figuras/exemplo-1.jpg" 1780401547 32587 5a9cbe3eed76e7bf2ef454388d313e5f ""
   "figuras/figura-3.png" 1780401547 17319 42b166f059939234d59e80f46f6d4a7d ""
   "figuras/main.cpp" 1780401547 107 b003a016e7ec66473170c40e37a1ff34 ""
